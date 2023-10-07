@@ -1,3 +1,16 @@
+# [0.4.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-07)
+
+[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0)
+
+### Bug Fixes
+
+* **github:** github repository organization changed to openswoole-bundle ([6df7bf0](https://github.com/openswoole-bundle/release-version-script/commit/6df7bf071f6f36944a4bc3d96f0babc320d71719))
+
+
+### Features
+
+* **docker:** changed docker hub organisation name to openswoolebundle ([d9c1b2c](https://github.com/openswoole-bundle/release-version-script/commit/d9c1b2ca412a6022e05bc0ca9be7e178df0fe87c))
+
 ## [0.3.9](https://github.com/pixelfederation/release-version-script/compare/v0.3.8...v0.3.9) (2023-04-18)
 
 [Full changelog](https://github.com/pixelfederation/release-version-script/compare/v0.3.8...v0.3.9)
