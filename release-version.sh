@@ -25,12 +25,15 @@ fi
 # Set GH env variables
 GH_COMMITER_NAME="${GH_COMMITER_NAME:-openswoole-bundle-bot}"
 GH_COMMITER_EMAIL="${GH_COMMITER_EMAIL:-147276322+openswoole-bundle-bot@users.noreply.github.com}"
+GH_COMMITER_SIGNING_KEY="${GH_COMMITER_SIGNING_KEY:-xxxx}"
 GH_REPOSITORY="${GH_REPOSITORY:-openswoole-bundle/swoole-bundle}"
 GH_TOKEN="${GH_TOKEN:?"Provide \"GH_TOKEN\" variable with GitHub Personal Access Token"}"
 
 # Configure git
 git config user.name "${GH_COMMITER_NAME}"
 git config user.email "${GH_COMMITER_EMAIL}"
+git config user.signingkey "${GH_COMMITER_SIGNING_KEY}"
+git config commit.gpgsign true
 
 GIT_COMMIT_MESSAGE_FIRST_LINE="$(git show-branch --no-name HEAD)"
 GIT_COMMIT_MESSAGE_RELEASE_COMMIT_MATCHED="$(echo "$GIT_COMMIT_MESSAGE_FIRST_LINE" | sed -E 's/^chore\(release\)\: v([a-zA-Z0-9\.\-]+) \:tada\:/\1/')"
@@ -244,5 +247,9 @@ git push origin $PR_BASE
     fi
 done
 git remote remove authorized
+git config --unset user.name
+git config --unset user.email
+git config --unset user.signingkey
+git config --unset commit.gpgsign
 
 echo "Please approve and fast-forward merge release pull requests!"
