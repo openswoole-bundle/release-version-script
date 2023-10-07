@@ -7,7 +7,7 @@ COPY release-version.sh /usr/local/bin/release-version
 RUN chmod a+x /usr/local/bin/release-version
 ENV CURRENT_VERSION="" \
     DRY_RUN="0" \
-    GH_REPOSITORY="openswoolebundle/release-version-script" \
+    GH_REPOSITORY="openswoole-bundle/release-version-script" \
     GH_COMMITER_NAME="openswoole-bundle-bot" \
     GH_COMMITER_EMAIL="147276322+openswoole-bundle-bot@users.noreply.github.com" \
     GH_TOKEN="" \
