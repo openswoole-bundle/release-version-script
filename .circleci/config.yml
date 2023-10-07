@@ -1,8 +1,8 @@
 version: 2.1
 executors:
-  pixelfederation-docker-client:
+  openswoolebundle-docker-client:
     docker:
-      - image: pixelfederation/docker-client:20.10.17-compose
+      - image: openswoolebundle/docker-client:20.10.17-compose
     working_directory: ~/workdir
 
 aliases:
@@ -34,10 +34,10 @@ aliases:
 
 jobs:
   docker-bake-tagged:
-    executor: pixelfederation-docker-client
+    executor: openswoolebundle-docker-client
     environment:
       REGISTRY: docker.io
-      NAMESPACE: pixelfederation
+      NAMESPACE: openswoolebundle
       IMAGE: release-version-script
       SERVICES: releaser
       TAG_LATEST: latest
@@ -73,10 +73,10 @@ jobs:
           command: docker buildx bake --progress=plain $SERVICES
 
   docker-bake:
-    executor: pixelfederation-docker-client
+    executor: openswoolebundle-docker-client
     environment:
       REGISTRY: docker.io
-      NAMESPACE: pixelfederation
+      NAMESPACE: openswoolebundle
       IMAGE: release-version-script
       SERVICES: releaser
     steps:
@@ -141,14 +141,14 @@ jobs:
 
   releaser-dry-run:
     docker:
-      - image: docker.io/pixelfederation/release-version-script:build-$CIRCLE_SHA1
+      - image: docker.io/openswoolebundle/release-version-script:build-$CIRCLE_SHA1
     working_directory: /usr/src/app
     environment:
       DEBUG: "0"
       DRY_RUN: "1"
       GH_TOKEN: "xxx"
       GH_RELEASE_DRAFT: "true"
-      GH_REPOSITORY: "pixelfederation/release-version-script"
+      GH_REPOSITORY: "openswoolebundle/release-version-script"
     steps:
       - checkout
       - run:
@@ -163,13 +163,13 @@ jobs:
 
   releaser:
     docker:
-      - image: docker.io/pixelfederation/release-version-script:build-$CIRCLE_SHA1
+      - image: docker.io/openswoolebundle/release-version-script:build-$CIRCLE_SHA1
     working_directory: /usr/src/app
     environment:
       DEBUG: "1"
       DRY_RUN: "0"
       GH_RELEASE_DRAFT: "false"
-      GH_REPOSITORY: "pixelfederation/release-version-script"
+      GH_REPOSITORY: "openswoolebundle/release-version-script"
     steps:
       - checkout
       - run:
