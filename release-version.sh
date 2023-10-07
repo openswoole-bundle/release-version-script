@@ -23,9 +23,9 @@ if [[ $(git name-rev --name-only --tags HEAD) = "v$CURRENT_VERSION" ]]; then
 fi
 
 # Set GH env variables
-GH_COMMITER_NAME="${GH_COMMITER_NAME:-swoole-bundle-bot}"
-GH_COMMITER_EMAIL="${GH_COMMITER_EMAIL:-swoolebundle@gmail.com}"
-GH_REPOSITORY="${GH_REPOSITORY:-openswoolebundle/swoole-bundle}"
+GH_COMMITER_NAME="${GH_COMMITER_NAME:-openswoole-bundle-bot}"
+GH_COMMITER_EMAIL="${GH_COMMITER_EMAIL:-147276322+openswoole-bundle-bot@users.noreply.github.com}"
+GH_REPOSITORY="${GH_REPOSITORY:-openswoole-bundle/swoole-bundle}"
 GH_TOKEN="${GH_TOKEN:?"Provide \"GH_TOKEN\" variable with GitHub Personal Access Token"}"
 
 # Configure git

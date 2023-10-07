@@ -148,7 +148,7 @@ jobs:
       DRY_RUN: "1"
       GH_TOKEN: "xxx"
       GH_RELEASE_DRAFT: "true"
-      GH_REPOSITORY: "openswoolebundle/release-version-script"
+      GH_REPOSITORY: "openswoole-bundle/release-version-script"
     steps:
       - checkout
       - run:
@@ -169,7 +169,7 @@ jobs:
       DEBUG: "1"
       DRY_RUN: "0"
       GH_RELEASE_DRAFT: "false"
-      GH_REPOSITORY: "openswoolebundle/release-version-script"
+      GH_REPOSITORY: "openswoole-bundle/release-version-script"
     steps:
       - checkout
       - run:
