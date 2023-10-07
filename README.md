@@ -9,6 +9,8 @@ https://hub.docker.com/r/openswoolebundle/release-version-script
 ```sh
 docker-compose build --pull
 
+# either export vars to shell or use .env file
+export GH_COMMITER_SIGNING_KEY=xxxx
 export GH_TOKEN="xxxxx"
 export DRY_RUN="0"
 export DEBUG="1"

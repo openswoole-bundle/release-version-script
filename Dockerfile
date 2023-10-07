@@ -10,6 +10,7 @@ ENV CURRENT_VERSION="" \
     GH_REPOSITORY="openswoole-bundle/release-version-script" \
     GH_COMMITER_NAME="openswoole-bundle-bot" \
     GH_COMMITER_EMAIL="147276322+openswoole-bundle-bot@users.noreply.github.com" \
+    GH_COMMITER_SIGNING_KEY="xxxx" \
     GH_TOKEN="" \
     GH_RELEASE_DRAFT="false" \
     GH_RELEASE_PRERELEASE="false"
