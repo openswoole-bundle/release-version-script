@@ -2,7 +2,7 @@
 
 ## Published releases are available on DockerHub
 
-https://hub.docker.com/r/pixelfederation/release-version-script
+https://hub.docker.com/r/openswoolebundle/release-version-script
 
 ## Docker
 
