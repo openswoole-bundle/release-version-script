@@ -1,4 +1,4 @@
-ARG NODE_TAG="15-alpine3.13"
+ARG NODE_TAG="20-alpine3.18"
 FROM node:${NODE_TAG} as Runner
 WORKDIR /usr/src/app
 RUN apk add --no-cache bash git curl jq openssh-client
