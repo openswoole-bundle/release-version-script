@@ -185,6 +185,12 @@ $(conventional-changelog | awk 'NR > 1 { print }')
 "
 
 if [ "0" = "$DRY_RUN" ]; then
+    # init and run GPG
+    mkdir -p /root/.gnupg
+    cp -R /root/.gnupg_host/* /root/.gnupg/
+    gpg-agent --verbose --daemon --log-file /tmp/gpg-agent.log --allow-preset-passphrase --default-cache-ttl=31536000
+
+    # commit changes with GPG signature
     git add CHANGELOG.md
     git commit -m "${COMMIT_MESSAGE}"
 else
