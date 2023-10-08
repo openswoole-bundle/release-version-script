@@ -1,3 +1,35 @@
+# [0.4.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-07)
+
+[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0)
+
+### Bug Fixes
+
+* **github:** github repository organization changed to openswoole-bundle ([3c547ef](https://github.com/openswoole-bundle/release-version-script/commit/3c547ef67d01f742c95256f0ec1ba1bb2f0a1db6))
+
+
+### Features
+
+* **docker:** added GPG package to be able to sign commits ([579e53f](https://github.com/openswoole-bundle/release-version-script/commit/579e53fe38d8a5ffbd7c921420d5f21eabbcd826))
+* **docker:** added volume mount to local gpg data folder to docker compose ([8606ee3](https://github.com/openswoole-bundle/release-version-script/commit/8606ee3395bef3500556895bd04a7cea58fc54d2))
+* **docker:** changed docker hub organisation name to openswoolebundle ([bb4492e](https://github.com/openswoole-bundle/release-version-script/commit/bb4492ea8d609427fda3b4d9901b50478056bfa3))
+* **git:** added commit signing + resetting of configured commiter after script run ([3eabd9b](https://github.com/openswoole-bundle/release-version-script/commit/3eabd9b43ff817e2ca5a3e90fa64300340200484))
+
+# [0.4.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-07)
+
+[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0)
+
+### Bug Fixes
+
+* **github:** github repository organization changed to openswoole-bundle ([3c547ef](https://github.com/openswoole-bundle/release-version-script/commit/3c547ef67d01f742c95256f0ec1ba1bb2f0a1db6))
+
+
+### Features
+
+* **docker:** added GPG package to be able to sign commits ([579e53f](https://github.com/openswoole-bundle/release-version-script/commit/579e53fe38d8a5ffbd7c921420d5f21eabbcd826))
+* **docker:** added volume mount to local gpg data folder to docker compose ([8606ee3](https://github.com/openswoole-bundle/release-version-script/commit/8606ee3395bef3500556895bd04a7cea58fc54d2))
+* **docker:** changed docker hub organisation name to openswoolebundle ([bb4492e](https://github.com/openswoole-bundle/release-version-script/commit/bb4492ea8d609427fda3b4d9901b50478056bfa3))
+* **git:** added commit signing + resetting of configured commiter after script run ([3eabd9b](https://github.com/openswoole-bundle/release-version-script/commit/3eabd9b43ff817e2ca5a3e90fa64300340200484))
+
 ## [0.3.9](https://github.com/pixelfederation/release-version-script/compare/v0.3.8...v0.3.9) (2023-04-18)
 
 [Full changelog](https://github.com/pixelfederation/release-version-script/compare/v0.3.8...v0.3.9)
