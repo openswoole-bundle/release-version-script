@@ -14,11 +14,11 @@ services:
       GH_COMMITER_NAME: "${GH_COMMITER_NAME:-openswoole-bundle-bot}"
       GH_COMMITER_EMAIL: "${GH_COMMITER_EMAIL:-147276322+openswoole-bundle-bot@users.noreply.github.com}"
       GH_COMMITER_SIGNING_KEY: "${GH_COMMITER_SIGNING_KEY:-xxxx}"
+      GH_COMMITER_PGP_PRIVATE_KEY: "${GH_COMMITER_PGP_PRIVATE_KEY:-xxxx}"
       GH_TOKEN: "${GH_TOKEN:-xxxxxxxx}"
       GH_RELEASE_DRAFT: "${GH_RELEASE_DRAFT:-true}"
       GH_RELEASE_PRERELEASE: "${GH_RELEASE_PRERELEASE:-false}"
     volumes:
-      - "~/.gnupg:/root/.gnupg_host:r"
       - "./.git:/usr/src/app/.git:rw"
       - "./CHANGELOG.md:/usr/src/app/CHANGELOG.md:rw"
       - "./release-version.sh:/usr/local/bin/release-version:rw"
