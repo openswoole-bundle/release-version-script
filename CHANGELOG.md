@@ -1,3 +1,11 @@
+## [0.4.1](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.0...v0.4.1) (2023-11-19)
+
+[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.0...v0.4.1)
+
+### Bug Fixes
+
+* **gpg:** attempt to use gpg keys properly ([39337c5](https://github.com/openswoole-bundle/release-version-script/commit/39337c557e31827b4c617a301b6d2d16524b96f0))
+
 # [0.4.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-08)
 
 [Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0)
