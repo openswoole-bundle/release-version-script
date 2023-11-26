@@ -3,7 +3,7 @@ variable "REGISTRY" {
 }
 
 variable "NAMESPACE" {
-  default = "openswoolebundle"
+  default = "symfonywithswoole"
 }
 
 variable "IMAGE" {
@@ -19,8 +19,8 @@ variable "TAG_LATEST" {
 }
 
 target "releaser" {
-  cache-from = ["type=registry,ref=docker.io/openswoolebundle/release-version-script-cache:releaser"]
-  cache-to   = ["type=registry,ref=docker.io/openswoolebundle/release-version-script-cache:releaser,mode=max"]
+  cache-from = ["type=registry,ref=docker.io/symfonywithswoole/release-version-script-cache:releaser"]
+  cache-to   = ["type=registry,ref=docker.io/symfonywithswoole/release-version-script-cache:releaser,mode=max"]
   output     = ["type=registry"]
   tags = TAG_LATEST == "" ? [
     "${REGISTRY}/${NAMESPACE}/${IMAGE}:${TAG}",
