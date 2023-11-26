@@ -1,27 +1,27 @@
-## [0.4.1](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.0...v0.4.1) (2023-11-19)
+## [0.4.1](https://github.com/symfony-swoole/release-version-script/compare/v0.4.0...v0.4.1) (2023-11-19)
 
-[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.0...v0.4.1)
-
-### Bug Fixes
-
-* **gpg:** attempt to use gpg keys properly ([39337c5](https://github.com/openswoole-bundle/release-version-script/commit/39337c557e31827b4c617a301b6d2d16524b96f0))
-
-# [0.4.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-08)
-
-[Full changelog](https://github.com/openswoole-bundle/release-version-script/compare/v0.3.9...v0.4.0)
+[Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.4.0...v0.4.1)
 
 ### Bug Fixes
 
-* **github:** github repository organization changed to openswoole-bundle ([3c547ef](https://github.com/openswoole-bundle/release-version-script/commit/3c547ef67d01f742c95256f0ec1ba1bb2f0a1db6))
+* **gpg:** attempt to use gpg keys properly ([39337c5](https://github.com/symfony-swoole/release-version-script/commit/39337c557e31827b4c617a301b6d2d16524b96f0))
+
+# [0.4.0](https://github.com/symfony-swoole/release-version-script/compare/v0.3.9...v0.4.0) (2023-10-08)
+
+[Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.3.9...v0.4.0)
+
+### Bug Fixes
+
+* **github:** github repository organization changed to openswoole-bundle ([3c547ef](https://github.com/symfony-swoole/release-version-script/commit/3c547ef67d01f742c95256f0ec1ba1bb2f0a1db6))
 
 
 ### Features
 
-* **docker:** added GPG package to be able to sign commits ([4f32a1b](https://github.com/openswoole-bundle/release-version-script/commit/4f32a1b16fd4e5fbf36904ab1a36ad3a38e067ea))
-* **docker:** added volume mount to local gpg data folder to docker compose ([eca4c72](https://github.com/openswoole-bundle/release-version-script/commit/eca4c72b2e754cf7502b5118a00959a9e446722a))
-* **docker:** changed docker hub organisation name to openswoolebundle ([bb4492e](https://github.com/openswoole-bundle/release-version-script/commit/bb4492ea8d609427fda3b4d9901b50478056bfa3))
-* **git:** added commit signing + resetting of configured commiter after script run ([0fa2b89](https://github.com/openswoole-bundle/release-version-script/commit/0fa2b89c8622455d3a532244fa04e3804f1ff5a8))
-* **gpg:** git commits are signed by gpg ([81732aa](https://github.com/openswoole-bundle/release-version-script/commit/81732aac9071eb2fe1075c1edd85cde95ead21a2))
+* **docker:** added GPG package to be able to sign commits ([4f32a1b](https://github.com/symfony-swoole/release-version-script/commit/4f32a1b16fd4e5fbf36904ab1a36ad3a38e067ea))
+* **docker:** added volume mount to local gpg data folder to docker compose ([eca4c72](https://github.com/symfony-swoole/release-version-script/commit/eca4c72b2e754cf7502b5118a00959a9e446722a))
+* **docker:** changed docker hub organisation name to openswoolebundle ([bb4492e](https://github.com/symfony-swoole/release-version-script/commit/bb4492ea8d609427fda3b4d9901b50478056bfa3))
+* **git:** added commit signing + resetting of configured commiter after script run ([0fa2b89](https://github.com/symfony-swoole/release-version-script/commit/0fa2b89c8622455d3a532244fa04e3804f1ff5a8))
+* **gpg:** git commits are signed by gpg ([81732aa](https://github.com/symfony-swoole/release-version-script/commit/81732aac9071eb2fe1075c1edd85cde95ead21a2))
 
 ## [0.3.9](https://github.com/pixelfederation/release-version-script/compare/v0.3.8...v0.3.9) (2023-04-18)
 

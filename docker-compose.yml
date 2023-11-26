@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   releaser:
-    image: "${REGISTRY:-docker.io}/${NAMESPACE:-openswoolebundle}/${IMAGE:-release-version-script}:${TAG:-local}"
+    image: "${REGISTRY:-docker.io}/${NAMESPACE:-symfonywithswoole}/${IMAGE:-release-version-script}:${TAG:-local}"
     build:
       context: .
       args:
@@ -10,9 +10,9 @@ services:
     environment:
       DEBUG: "${DEBUG:-1}"
       DRY_RUN: "${DRY_RUN:-1}"
-      GH_REPOSITORY: "${GH_REPOSITORY:-openswoole-bundle/release-version-script}"
-      GH_COMMITER_NAME: "${GH_COMMITER_NAME:-openswoole-bundle-bot}"
-      GH_COMMITER_EMAIL: "${GH_COMMITER_EMAIL:-147276322+openswoole-bundle-bot@users.noreply.github.com}"
+      GH_REPOSITORY: "${GH_REPOSITORY:-symfony-swoole/release-version-script}"
+      GH_COMMITER_NAME: "${GH_COMMITER_NAME:-symfony-swoole-bot}"
+      GH_COMMITER_EMAIL: "${GH_COMMITER_EMAIL:-147276322+symfony-swoole-bot@users.noreply.github.com}"
       GH_COMMITER_SIGNING_KEY: "${GH_COMMITER_SIGNING_KEY:-xxxx}"
       GH_COMMITER_PGP_PRIVATE_KEY: "${GH_COMMITER_PGP_PRIVATE_KEY:-xxxx}"
       GH_TOKEN: "${GH_TOKEN:-xxxxxxxx}"
