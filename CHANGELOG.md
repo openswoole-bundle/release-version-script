@@ -1,3 +1,11 @@
+## [0.5.1](https://github.com/openswoole-bundle/release-version-script/compare/v0.5.0...v0.5.1) (2024-02-24)
+
+[Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.5.0...v0.5.1)
+
+### Miscellaneous
+
+* Minor fixes
+
 # [0.5.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.1...v0.5.0) (2023-11-26)
 
 [Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.4.1...v0.5.0)
