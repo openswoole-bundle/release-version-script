@@ -1,3 +1,11 @@
+# [0.5.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.1...v0.5.0) (2024-02-24)
+
+[Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.4.1...v0.5.0)
+
+### Features
+
+* **naming:** github repository organization changed to symfony-swoole, docker hub organisation changed to symfonywithswoole ([6d3f13c](https://github.com/openswoole-bundle/release-version-script/commit/6d3f13c6fd07420d8cbd330f5a301a5148fb5e55))
+
 # [0.5.0](https://github.com/openswoole-bundle/release-version-script/compare/v0.4.1...v0.5.0) (2023-11-26)
 
 [Full changelog](https://github.com/symfony-swoole/release-version-script/compare/v0.4.1...v0.5.0)
