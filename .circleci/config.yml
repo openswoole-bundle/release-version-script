@@ -2,7 +2,7 @@ version: 2.1
 executors:
   symfonywithswoole-docker-client:
     docker:
-      - image: symfonywithswoole/docker-client:20.10.17-compose
+      - image: symfonywithswoole/docker-client:25.0.3
     working_directory: ~/workdir
 
 aliases:
@@ -10,7 +10,7 @@ aliases:
   - &docker-remote-version
     setup_remote_docker:
       # https://circleci.com/docs/2.0/building-docker-images/#docker-version
-      version: 20.10.17
+      version: default
 
     # Filters
   - &filter-run-on-local-branches
@@ -56,6 +56,9 @@ jobs:
           name: Print docker info
           command: docker info
       - run:
+          name: Docker pass initialization
+          command: docker-use-pass
+      - run:
           name: Login to Docker Hub
           command: >-
             DOCKER_REGISTRY="$REGISTRY"
@@ -93,6 +96,9 @@ jobs:
       - run:
           name: Print docker info
           command: docker info
+      - run:
+          name: Docker pass initialization
+          command: docker-use-pass
       - run:
           name: Login to Docker Hub
           command: >-
